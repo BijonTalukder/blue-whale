@@ -101,35 +101,46 @@ const Dashboard = ({ view, toggle }) => {
       labels: { en: "Dashboard", bn: "ড্যাশবোর্ড" },
     },
     {
-      id: "userGrievance",
+      id: "Product",
       path: "",
       icon: <HiReceiptTax className="h-5 w-5 text-white" />,
-      labels: { en: "Grievances", bn: "অভিযোগ তালিকা" },
+      labels: { en: "Product ", bn: "Product" },
       children: [
         {
-          id: "userGrievancePending",
-          path: "/Dashboard/UserGrievance/Pending",
+          id: "create product",
+          path: "/Dashboard/product/create",
           icon: <HiReceiptTax className="h-5 w-5 text-white" />,
-          labels: { en: "All Pending", bn: "পেন্ডিং অভিযোগ তালিকা" },
+          labels: { en: "create product", bn: "create product" },
         },
         {
-          id: "userGrievanceAccept",
-          path: "/Dashboard/UserGrievance/Accept",
+          id: "product list",
+          path: "/Dashboard/product",
           icon: <HiReceiptTax className="h-5 w-5 text-white" />,
-          labels: { en: "All Accepted", bn: "গৃহীত অভিযোগ তালিকা" },
+          labels: { en: "Product List", bn: "product List" },
+        },
+      
+      ],
+    },
+
+    {
+      id: "Product Category",
+      path: "",
+      icon: <HiReceiptTax className="h-5 w-5 text-white" />,
+      labels: { en: "Product Category", bn: "Product Category" },
+      children: [
+        {
+          id: "create product category",
+          path: "/Dashboard/product-category/create",
+          icon: <HiReceiptTax className="h-5 w-5 text-white" />,
+          labels: { en: "create", bn: "create" },
         },
         {
-          id: "userGrievanceComplete",
-          path: "/Dashboard/UserGrievance/Complete",
+          id: "list",
+          path: "/Dashboard/product-category",
           icon: <HiReceiptTax className="h-5 w-5 text-white" />,
-          labels: { en: "All Completed", bn: "সম্পন্ন অভিযোগ তালিকা" },
+          labels: { en: "category List", bn: "category List" },
         },
-        {
-          id: "userGrievanceReject",
-          path: "/Dashboard/UserGrievance/Reject",
-          icon: <HiReceiptTax className="h-5 w-5 text-white" />,
-          labels: { en: "All Rejected", bn: "প্রত্যাখ্যান অভিযোগ তালিকা" },
-        },
+      
       ],
     },
     {
@@ -144,12 +155,7 @@ const Dashboard = ({ view, toggle }) => {
       icon: <UserCircleIcon className="h-5 w-5 text-white" />,
       labels: { en: "Admin List", bn: "এডমিন তালিকা" },
     },
-    {
-      id: "admins",
-      path: "/Dashboard/product/create",
-      icon: <UserCircleIcon className="h-5 w-5 text-white" />,
-      labels: { en: "Create Product", bn: "Create Product" },
-    },
+  
     {
       id: "breakingnews",
       path: "/Dashboard/BreakingNews",
